@@ -7,23 +7,21 @@
   <meta name="author" content="Zhanyi Sun">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=4">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table class="page-table">
     <tbody>
       <tr>
         <td>
 
           <!-- Intro -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="full-table">
             <tbody>
               <tr>
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p class="name" style="text-align:center;">
-                    Zhanyi Sun
-                  </p>
+                <td class="intro-text">
+                  <p class="name" style="text-align:center;">Zhanyi Sun</p>
 
                   <p>
                     I am a second-year Ph.D. student at Stanford University advised by
@@ -50,13 +48,12 @@
                   </p>
                 </td>
 
-                <td style="padding:2.5%;width:40%;max-width:40%">
+                <td class="intro-photo-cell">
                   <a href="images/zhanyi.png">
                     <img
-                      style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;"
+                      class="profile-photo"
                       alt="profile photo"
-                      src="images/zhanyi.png"
-                      class="hoverZoomLink">
+                      src="images/zhanyi.png">
                   </a>
                 </td>
               </tr>
@@ -64,10 +61,10 @@
           </table>
 
           <!-- Research Interest -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="full-table">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
+                <td class="section-cell">
                   <h2>Research Interest</h2>
                   <p>
                     My research aims to develop robotic systems that achieve human-like intelligence and dexterity
@@ -79,10 +76,10 @@
           </table>
 
           <!-- Preprint Header -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="full-table">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
+                <td class="section-cell">
                   <h2>Preprint</h2>
                 </td>
               </tr>
@@ -90,21 +87,23 @@
           </table>
 
           <!-- Preprint Entries -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="pub-table">
+            <colgroup>
+              <col class="pub-col-media">
+              <col>
+            </colgroup>
             <tbody>
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="dice_rl_image">
-                      <video width="200" autoplay muted loop playsinline>
-                        <source src="images/dice_rl_thread_1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                <td class="pub-left">
+                  <div class="media-frame media-rect">
+                    <video width="200" autoplay muted loop playsinline>
+                      <source src="images/dice_rl_thread_1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://arxiv.org/abs/2603.10263">
                     <span class="papertitle">From Prior to Pro: Efficient Skill Mastery via Distribution Contractive RL Finetuning</span>
                   </a>
@@ -130,17 +129,17 @@
                 </td>
               </tr>
 
-              <tr style="height:15px;">
+              <tr class="spacer-row">
                 <td colspan="2"></td>
               </tr>
             </tbody>
           </table>
 
           <!-- Publications Header -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="full-table">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
+                <td class="section-cell">
                   <h2>Publications (* indicates equal contribution)</h2>
                 </td>
               </tr>
@@ -148,22 +147,24 @@
           </table>
 
           <!-- Publication Entries -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="pub-table">
+            <colgroup>
+              <col class="pub-col-media">
+              <col>
+            </colgroup>
             <tbody>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="lpb_image">
-                      <video width="200" autoplay muted loop playsinline>
-                        <source src="images/teaser_ours_third_person.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                <td class="pub-left">
+                  <div class="media-frame media-rect">
+                    <video width="200" autoplay muted loop playsinline>
+                      <source src="images/teaser_ours_third_person.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://project-latentpolicybarrier.github.io/">
                     <span class="papertitle">Latent Policy Barrier: Learning Robust Visuomotor Policies by Staying In-Distribution</span>
                   </a>
@@ -188,23 +189,21 @@
                 </td>
               </tr>
 
-              <tr style="height:15px;">
+              <tr class="spacer-row">
                 <td colspan="2"></td>
               </tr>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="rlvlmf_image">
-                      <video width="200" height="200" autoplay muted loop playsinline>
-                        <source src="images/rlvlmf.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                <td class="pub-left">
+                  <div class="media-frame media-square">
+                    <video width="200" height="200" autoplay muted loop playsinline>
+                      <source src="images/rlvlmf.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://rlvlmf2024.github.io/">
                     <span class="papertitle">RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback</span>
                   </a>
@@ -230,16 +229,16 @@
                 </td>
               </tr>
 
-              <tr style="height:15px;">
+              <tr class="spacer-row">
                 <td colspan="2"></td>
               </tr>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/fcvp2.png" alt="fcvp" width="200" height="160">
+                <td class="pub-left">
+                  <img class="thumb-200" src="images/fcvp2.png" alt="fcvp">
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://sites.google.com/view/dressing-fcvp">
                     <span class="papertitle">Force Constrained Visual Policy: Safe Robot-Assisted Dressing via Multi-Modal Sensing</span>
                   </a>
@@ -261,23 +260,21 @@
                 </td>
               </tr>
 
-              <tr style="height:15px;">
+              <tr class="spacer-row">
                 <td colspan="2"></td>
               </tr>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="one_policy_image">
-                      <video width="200" height="200" autoplay muted loop playsinline>
-                        <source src="images/one_policy.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                <td class="pub-left">
+                  <div class="media-frame media-square">
+                    <video width="200" height="200" autoplay muted loop playsinline>
+                      <source src="images/one_policy.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://sites.google.com/view/one-policy-dress/">
                     <span class="papertitle">One Policy to Dress Them All: Learning to Dress People with Diverse Poses and Garments</span>
                   </a>
@@ -301,16 +298,16 @@
                 </td>
               </tr>
 
-              <tr style="height:20px;">
+              <tr class="spacer-row">
                 <td colspan="2"></td>
               </tr>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/vitcod.png" alt="vitcod" width="200" height="160">
+                <td class="pub-left">
+                  <img class="thumb-200" src="images/vitcod.png" alt="vitcod">
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://arxiv.org/abs/2210.09573">
                     <span class="papertitle">ViTCoD: Vision transformer acceleration via dedicated algorithm and accelerator co-design</span>
                   </a>
@@ -338,16 +335,16 @@
                 </td>
               </tr>
 
-              <tr style="height:25px;">
+              <tr class="spacer-row">
                 <td colspan="2"></td>
               </tr>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/supertickets.png" alt="supertickets" width="200" height="120">
+                <td class="pub-left">
+                  <img class="thumb-200 thumb-200-short" src="images/supertickets.png" alt="supertickets">
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://arxiv.org/abs/2207.03677">
                     <span class="papertitle">SuperTickets: Drawing Task-Agnostic Lottery Tickets from Supernets via Jointly Architecture Searching and Parameter Pruning</span>
                   </a>
@@ -371,23 +368,21 @@
                 </td>
               </tr>
 
-              <tr style="height:25px;">
+              <tr class="spacer-row">
                 <td colspan="2"></td>
               </tr>
 
               <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id="blind_image">
-                      <video width="200" height="200" autoplay muted loop playsinline>
-                        <source src="images/blind.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
+                <td class="pub-left">
+                  <div class="media-frame media-square">
+                    <video width="200" height="200" autoplay muted loop playsinline>
+                      <source src="images/blind.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </td>
 
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td class="pub-right">
                   <a href="https://carlosquinterop.github.io/project/blind/">
                     <span class="papertitle">Human-guided motion planning in partially observable environments</span>
                   </a>
@@ -416,10 +411,10 @@
           </table>
 
           <!-- Education Header -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="full-table">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
+                <td class="section-cell">
                   <h2>Education</h2>
                 </td>
               </tr>
@@ -427,19 +422,21 @@
           </table>
 
           <!-- Education Entries -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="edu-table">
+            <colgroup>
+              <col class="edu-col-logo">
+              <col>
+            </colgroup>
             <tbody>
               <tr>
-                <td style="padding:10px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <img src="images/cmu_logo.png" width="120" alt="CMU logo">
-                  </div>
+                <td class="edu-left">
+                  <img src="images/cmu_logo.png" width="120" alt="CMU logo">
                 </td>
 
-                <td style="padding:10px;width:75%;vertical-align:top">
-                  <papertitle><big>Carnegie Mellon University</big></papertitle>
+                <td class="edu-right">
+                  <span class="edu-title">Carnegie Mellon University</span>
                   <br>
-                  <papertitle style="color:gray"><big>Master of Science in Robotics (MSR)</big></papertitle>
+                  <span class="edu-subtitle">Master of Science in Robotics (MSR)</span>
                   <br><br>
                   Aug '22 - Jun '24
                   <br><br>
@@ -451,16 +448,14 @@
               </tr>
 
               <tr>
-                <td style="padding:10px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <img src="images/rice_logo.jpeg" width="120" alt="Rice logo">
-                  </div>
+                <td class="edu-left">
+                  <img src="images/rice_logo.jpeg" width="120" alt="Rice logo">
                 </td>
 
-                <td style="padding:10px;width:75%;vertical-align:top">
-                  <papertitle><big>Rice University</big></papertitle>
+                <td class="edu-right">
+                  <span class="edu-title">Rice University</span>
                   <br>
-                  <papertitle style="color:gray"><big>B.A. in Computer Science, B.S. in Electrical Engineering</big></papertitle>
+                  <span class="edu-subtitle">B.A. in Computer Science, B.S. in Electrical Engineering</span>
                   <br><br>
                   Aug '18 - May '22
                   <br><br>
@@ -475,7 +470,7 @@
           </table>
 
           <!-- Footer -->
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="full-table">
             <tbody>
               <tr>
                 <td style="padding:0">

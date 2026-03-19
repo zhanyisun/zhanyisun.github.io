@@ -81,14 +81,22 @@ a:hover {
   text-decoration: none;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 td,
 th,
 tr,
 p,
-a {
+a,
+span {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.5;
 }
 
 strong {
@@ -116,30 +124,130 @@ h2 {
   font-size: 32px;
 }
 
-.one {
-  width: 200px;
-  height: 160px;
-  position: relative;
+.page-table {
+  width: 100%;
+  max-width: 920px;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.two {
-  width: 200px;
-  height: 160px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.full-table,
+.pub-table,
+.edu-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.one video,
-.two video,
-.one img,
-.two img {
-  display: block;
+.intro-text {
+  padding: 2.5%;
+  width: 63%;
+  vertical-align: middle;
+}
+
+.intro-photo-cell {
+  padding: 2.5%;
+  width: 40%;
+  max-width: 40%;
+}
+
+.profile-photo {
+  width: 100%;
   max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.section-cell {
+  padding: 20px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.pub-col-media {
+  width: 240px;
+}
+
+.pub-left {
+  padding: 20px;
+  width: 240px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.pub-right {
+  padding: 20px;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+
+.media-frame {
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.media-rect {
+  height: 160px;
+}
+
+.media-square {
+  height: 200px;
+}
+
+.media-frame video,
+.media-frame img {
+  display: block;
+  width: 200px;
   height: auto;
+}
+
+.thumb-200 {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.thumb-200-short {
+  max-height: 120px;
+}
+
+.spacer-row td {
+  height: 15px;
+  padding: 0;
+}
+
+.edu-col-logo {
+  width: 160px;
+}
+
+.edu-left {
+  padding: 10px;
+  width: 160px;
+  vertical-align: middle;
+}
+
+.edu-right {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.edu-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.edu-subtitle {
+  font-size: 18px;
+  color: gray;
 }
 
 .fade {
@@ -150,4 +258,13 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+@media (max-width: 700px) {
+  .pub-col-media,
+  .pub-left,
+  .edu-col-logo,
+  .edu-left {
+    width: 220px;
+  }
 }
