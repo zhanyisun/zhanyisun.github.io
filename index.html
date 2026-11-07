@@ -119,11 +119,11 @@
                   <a href="https://github.com/real-stanford/policy-learning-dynamics">Code</a> |
                   <a href="https://huggingface.co/datasets/wintermelontree/robot_policy_overfitting_study">Data and Models</a>
                   <p>
-                    On both single-task behavior cloning and multitask VLA pretraining, later checkpoints trade
-                    coverage (large-<em>k</em> pass@<em>k</em>) for reliability (pass@1). Checkpoints with similar
-                    pass@1 can lead to very different RL or SFT finetuning performance. We propose an offline
-                    coverage&ndash;reliability criterion that selects checkpoints balancing the two, which leads to
-                    better downstream posttraining than the final checkpoints from the same runs.
+                    We use pass@<em>k</em> to study the coverage&ndash;reliability dynamics of generative robot
+                    policies. We find that continued supervised pretraining can improve reliability at the expense
+                    of coverage, and these changes affect downstream posttraining. We then develop a purely offline
+                    criterion for selecting checkpoints that balance coverage and reliability, and introduce a
+                    generative data augmentation method that raises the coverage&ndash;reliability Pareto frontier.
                   </p>
                 </td>
               </tr>
