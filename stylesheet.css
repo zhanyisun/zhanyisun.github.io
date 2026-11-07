@@ -268,3 +268,17 @@ span.highlight {
     width: 220px;
   }
 }
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  margin: 0 0 6px 0;
+}
+
+.news-date {
+  color: #888;
+}
