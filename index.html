@@ -24,7 +24,7 @@
                   <p class="name" style="text-align:center;">Zhanyi Sun</p>
 
                   <p>
-                    I am a second-year Ph.D. student at Stanford University advised by
+                    I am a third-year Ph.D. student at Stanford University advised by
                     <a href="https://shurans.github.io/">Prof. Shuran Song</a>
                     in the Robotics and Embodied AI (REAL) Lab.
                   </p>
@@ -96,6 +96,41 @@
               <col>
             </colgroup>
             <tbody>
+
+              <tr>
+                <td class="pub-left">
+                  <img class="thumb-200" src="images/beyond_val_loss.png" alt="Beyond Validation Loss teaser">
+                </td>
+
+                <td class="pub-right">
+                  <a href="https://arxiv.org/abs/2611.01565">
+                    <span class="papertitle">Beyond Validation Loss: Coverage and Reliability Dynamics in Robot Policy Pretraining</span>
+                  </a>
+                  <br>
+                  <strong>Zhanyi Sun</strong>,
+                  <a href="https://msimchowitz.github.io/">Max Simchowitz</a><sup>&dagger;</sup>,
+                  <a href="https://shurans.github.io/">Shuran Song</a><sup>&dagger;</sup>
+                  (<sup>&dagger;</sup> equal advising)
+                  <br>
+                  <em>arXiv preprint</em>, 2026
+                  <br>
+                  <a href="https://zhanyisun.github.io/robot-policy-learning-dynamics/">Blog Post</a> |
+                  <a href="https://arxiv.org/abs/2611.01565">Paper</a> |
+                  <a href="https://github.com/real-stanford/policy-learning-dynamics">Code</a> |
+                  <a href="https://huggingface.co/datasets/wintermelontree/robot_policy_overfitting_study">Data and Models</a>
+                  <p>
+                    On both single-task behavior cloning and multitask VLA pretraining, later checkpoints trade
+                    coverage (large-<em>k</em> pass@<em>k</em>) for reliability (pass@1). Checkpoints with similar
+                    pass@1 can lead to very different RL or SFT finetuning performance. We propose an offline
+                    coverage&ndash;reliability criterion that selects checkpoints balancing the two, which leads to
+                    better downstream posttraining than the final checkpoints from the same runs.
+                  </p>
+                </td>
+              </tr>
+
+              <tr class="spacer-row">
+                <td colspan="2"></td>
+              </tr>
 
               <tr>
                 <td class="pub-left">
